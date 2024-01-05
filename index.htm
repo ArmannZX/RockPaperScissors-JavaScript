@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="UpperHead">
+      <div class="Rock">
+        <p onclick="win_or_lose(Moves[0])" style="cursor: pointer">Rock</p>
+        <div>
+          <object data="images/stone-rock-svgrepo-com.svg"></object>
+        </div>
+      </div>
+      <div class="Paper">
+        <p onclick="win_or_lose(Moves[1])" style="cursor: pointer">Paper</p>
+        <div>
+          <object
+            onclick=""
+            data="images/written-paper-svgrepo-com.svg"
+          ></object>
+        </div>
+      </div>
+      <div class="Scissors">
+        <p onclick="win_or_lose(Moves[2])" style="cursor: pointer">Scissors</p>
+        <div>
+          <object onclick="" data="images/scissors-svgrepo-com.svg"></object>
+        </div>
+      </div>
+    </div>
+    <div class="LowerHead">
+      <div class="LeftSide">
+        <p>You</p>
+        <object id="you" data=""></object>
+      </div>
+      <div class="MidSide">
+        <p id="End"></p>
+        <div class="WorL">
+          <p>Wins: <span id="W"></span></p>
+          <p>Ties: <span id="T"></span></p>
+          <p>Loses: <span id="L"></span></p>
+        </div>
+        <button onclick="Reset()">Reset Score</button>
+      </div>
+      <div class="RightSide">
+        <object id="bot" data=""></object>
+        <p>CPU</p>
+      </div>
+    </div>
+    <script src="javascript/javajs.js"></script>
+  </body>
+</html>
